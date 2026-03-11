@@ -48,3 +48,4 @@ yarn-error.*
 /ios
 /android
 >>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29
+".env" 
