@@ -28,8 +28,8 @@ Após rodar `npx expo start`, escaneie o QR Code com o **Expo Go** no celular.
 
 ## Login
 
-- **Email:** boanoite.punpun@gmail.com
-- **Senha:** BoanoitePunpun
+- **Email:** 
+- **Senha:** 
 
 ## Estrutura
 
