@@ -1,12 +1,19 @@
 import { useRouter } from "expo-router";
+<<<<<<< HEAD
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
+=======
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+
+//AQUI COMPLETE O CSS DA TELA. DEIXE MINIMAMENTE PARECIDO COM A IMAGEM.
+>>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29
 export default function Perfil() {
   const router = useRouter();
 
   return (
+<<<<<<< HEAD
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         <Text style={styles.perfil}>Perfil</Text>
@@ -78,3 +85,27 @@ const styles = StyleSheet.create({
     fontWeight: "500",
   },
 });
+=======
+    <View style={styles.container}>
+      <Text style={styles.perfil}>Perfil</Text>
+      <View style={styles.perfilContainer}>
+        <Image
+          style={styles.avatar}
+          resizeMode="cover"
+          source={require("../../../assets/images/punpun.jpg")}
+        />
+        <Text style={styles.text}>Nome: Punpun</Text>
+        <Text style={styles.text}>Email: boanoite.punpun@gmail.com</Text>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => router.replace("/")}
+        >
+          <Text style={styles.btnTitle}>Sair</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({});
+>>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29

@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "name": "expoflix",
   "main": "expo-router/entry",
   "version": "1.0.0",
+=======
+  "name": "cinema-app",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+>>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -9,6 +15,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+<<<<<<< HEAD
     "expo": "~54.0.6",
     "expo-router": "~6.0.0",
     "expo-status-bar": "~2.2.3",
@@ -31,6 +38,25 @@
     "@types/react": "~19.1.0",
     "typescript": "^5.3.3",
     "babel-plugin-module-resolver": "^5.0.2"
+=======
+    "@expo/vector-icons": "^15.0.2",
+    "babel-preset-expo": "^55.0.10",
+    "expo": "~55.0.4",
+    "expo-constants": "~55.0.7",
+    "expo-linking": "~55.0.7",
+    "expo-router": "~55.0.3",
+    "expo-status-bar": "~55.0.4",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-native": "0.83.2",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-screens": "~4.23.0",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.2",
+    "typescript": "~5.9.2"
+>>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29
   },
   "private": true
 }

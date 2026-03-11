@@ -5,6 +5,7 @@ import {
   KeyboardAvoidingView,
 } from "react-native";
 
+<<<<<<< HEAD
 type Props = {
   placeholder: string;
   label: string;
@@ -14,12 +15,26 @@ type Props = {
   secureTextEntry?: boolean;
 };
 
+=======
+//COMPLETE OS TIPOS QUE ESTÃO FALTANDO NO PROPS
+type Props = {
+  placeholder: ;
+  label: string;
+  type: "email-address" | "default";
+  value: ;
+  setValue: (data: string) => void;
+};
+
+//COMPLETE OS PROPS DENTRO DO TextInput. PREENCHA CORRETAMENTE. E INSIRA O NOME DOS CAMPOS. 
+//LEMBRANDO QUE TODAS AS INFORMAÇÕES ESTÃO VINDO DO COMPONENTE PAI. AS INFORMAÇÕES TEM QUE SER DINÂMICAS.
+>>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29
 export const InputComponent = ({
   placeholder,
   label,
   type,
   value,
   setValue,
+<<<<<<< HEAD
   secureTextEntry = false,
 }: Props) => {
   return (
@@ -34,6 +49,19 @@ export const InputComponent = ({
         onChangeText={(data: string) => setValue(data)}
         secureTextEntry={secureTextEntry}
         placeholderTextColor="#999"
+=======
+}: Props) => {
+  return (
+    <KeyboardAvoidingView>
+      <Text style={styles.label}>{}</Text>
+      <TextInput
+        style={}
+        placeholder={}
+        autoCapitalize="none"
+        keyboardType={}
+        value={}
+        onChangeText={(data: string) => setValue(data)}
+>>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29
       />
     </KeyboardAvoidingView>
   );

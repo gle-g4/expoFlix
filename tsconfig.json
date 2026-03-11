@@ -3,6 +3,7 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
+<<<<<<< HEAD
       "@/*": [
         "./src/*"
       ]
@@ -14,4 +15,10 @@
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
   ]
+=======
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
+>>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29
 }

@@ -4,6 +4,7 @@ import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 
+<<<<<<< HEAD
 const VALID_EMAIL = "teste125@gmail.com";
 const VALID_PASSWORD = "teste125";
 
@@ -44,6 +45,29 @@ export default function Login() {
     router.replace("/(tabs)/dashboard" as Href);
   };
 
+=======
+export default function Login() {
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [isError, setIsError] = useState<boolean>(false);
+
+  const router = useRouter();
+
+  //FAZER A LÓGICA PARA NAVEGAR PARA O DASHBOARD
+  const handlerLogin = () => {
+    //REGRAS PARA IR PARA A PRÓXIMA TELA
+    //1 - OS CAMPOS NÃO PODEM FICAR VAZIOS
+    //2 - O EMAIL DEVE SER UM EMAIL VÁLIDO, OU SEJA, VERIFICAR SE TEM O '@' NO TEXTO
+    //3 - A SENHA DEVE TER NO MINIMO 6 CARACTERES
+    //4 - USUÁRIO E SENHA DEVE SER IGUAL A: boanoite.punpun@gmail.com e BoanoitePunpun
+    //5 - APÓS CONTEMPLAR TODAS AS REGRAS, FAZER A NAVEGAÇÃO PARA A PRÓXIMA TELA
+    //CASO ALGUMA REGRA SEJA QUEBRADA, DEVE APARECER UMA MENSAGEM DE ERRO.
+    router.replace("/(tabs)/dashboard" as Href);
+  };
+
+  //NOTE QUE TEMOS UMA TAG CHAMADA 'InputComponent'. ESSE COMPONENTE ESTA NA PASTA COMPONENTE.
+  //VÁ ATÉ A PASTA COMPONENTE E COMPLETE O CÓDIGO DO ARQUIVO PARA QUE FUNCIONE.
+>>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29
   return (
     <View style={styles.container}>
       <Text style={styles.title}>ExpoFlix</Text>
@@ -60,9 +84,14 @@ export default function Login() {
         type="default"
         value={password}
         setValue={setPassword}
+<<<<<<< HEAD
         secureTextEntry
       />
       {isError ? <Text style={styles.errorMessage}>{isError}</Text> : null}
+=======
+      />
+      {isError && <Text style={styles.errorMessage}>{isError}</Text>}
+>>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29
       <TouchableOpacity style={styles.button} onPress={handlerLogin}>
         <Text style={styles.buttonTitle}>Entrar</Text>
       </TouchableOpacity>
@@ -84,10 +113,25 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     marginBottom: 24,
   },
+<<<<<<< HEAD
   errorMessage: {
     alignSelf: "center",
     color: "#F5482F",
     marginBottom: 8,
+=======
+  input: {
+    backgroundColor: "white",
+    width: 300,
+    height: 40,
+    padding: 4,
+    borderWidth: 1,
+    borderColor: "#6B76A0",
+    borderRadius: 8,
+  },
+  errorMessage: {
+    alignSelf: "center",
+    color: "#F5482F",
+>>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29
   },
   button: {
     backgroundColor: "#86A16C",

@@ -1,5 +1,6 @@
 {
   "expo": {
+<<<<<<< HEAD
     "name": "ExpoFlix",
     "slug": "expoflix",
     "version": "1.0.0",
@@ -33,5 +34,39 @@
     "experiments": {
       "typedRoutes": true
     }
+=======
+    "name": "cinema-app",
+    "slug": "cinema-app",
+    "scheme": "cinema-app-scheme",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": ["expo-router"]
+>>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29
   }
 }

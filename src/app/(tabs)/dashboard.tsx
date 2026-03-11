@@ -1,9 +1,19 @@
 import { MovieCard } from "@/components/movieCard";
+<<<<<<< HEAD
 import { Movies } from "@/services/movie";
 import { StatusBar } from "expo-status-bar";
 import { FlatList, StyleSheet, Text } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+=======
+import { StatusBar } from "expo-status-bar";
+import { FlatList, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+//NOTE QUE TEMOS UMA TAG NOVA CHAMADA 'FlatList'. ESSA TAG RENDERIZA NOSSAS LISTAS.
+//IMPORTE A LISTA 'Movies' PARA QUE FUNCIONE CORRETAMENTE.
+//CRIE A LISTA 'Movies' ESTA DENTRO DA PASTA SERVICES.
+>>>>>>> 767c0d32e72e916c941dddfacd274a8fbcc0ab29
 export default function Dashboard() {
   return (
     <SafeAreaView style={styles.container}>

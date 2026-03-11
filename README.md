@@ -50,3 +50,4 @@ src/
   types/
     movie.type.ts        ← Tipo Movie
 ```
+"# Expoflix---facul" 
